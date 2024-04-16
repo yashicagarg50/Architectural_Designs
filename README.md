@@ -1,4 +1,4 @@
-**Project Title: Architectural Designs**
+### **Project Title: Architectural Designs**
 
 ---
 
