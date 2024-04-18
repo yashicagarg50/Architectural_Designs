@@ -1,45 +1,77 @@
-# Git Integration & Wix CLI <img align="left" src="https://user-images.githubusercontent.com/89579857/185785022-cab37bf5-26be-4f11-85f0-1fac63c07d3b.png">
+### **Project Title: Architectural Designs**
 
-This repo is part of Git Integration & Wix CLI, a set of tools that allows you to write, test, and publish code for your Wix site locally on your computer. 
+---
 
-Connect your site to GitHub, develop in your favorite IDE, test your code in real time, and publish your site from the command line.
+### Overview:
 
-## Set up this repository in your IDE
-This repo is connected to a Wix site. That site tracks this repo's default branch. Any code committed and pushed to that branch from your local IDE appears on the site.
+The "Architectural Designs" project is a web application developed to provide customers with architectural floor designs. Utilizing a stack consisting of React for the frontend, Node.js for the backend, and MongoDB for the database, this project aims to offer a user-friendly interface for clients to explore various floor plans, request customization, and access additional services.
 
-Before getting started, make sure you have the following things installed:
-* [Git](https://git-scm.com/download)
-* [Node](https://nodejs.org/en/download/), version 14.8 or later.
-* [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) or [yarn](https://yarnpkg.com/getting-started/install)
-* An SSH key [added to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
+---
 
-To set up your local environment and start coding locally, do the following:
+### Features:
 
-1. Open your terminal and navigate to where you want to store the repo.
-1. Clone the repo by running `git clone <your-repository-url>`.
-1. Navigate to the repo's directory by running `cd <directory-name>`.
-1. Install the repo's dependencies by running `npm install` or `yarn install`.
-1. Install the Wix CLI by running `npm install -g @wix/cli` or `yarn global add @wix/cli`.  
-   Once you've installed the CLI globally, you can use it with any Wix site's repo.
+1. **Floor Designs Display:** Present an array of pre-designed floor plans for users to browse through, each accompanied by detailed descriptions and images.
 
-For more information, see [Setting up Git Integration & Wix CLI](https://support.wix.com/en/article/velo-setting-up-git-integration-wix-cli-beta).
+2. **Customization Options:** Provide users with the ability to customize existing floor plans according to their specific requirements. This includes options to adjust dimensions, layout configurations, and architectural elements.
 
-## Write Velo code in your IDE
-Once your repo is set up, you can write code in it as you would in any other non-Wix project. The repo's file structure matches the [public](https://support.wix.com/en/article/velo-working-with-the-velo-sidebar#public), [backend](https://support.wix.com/en/article/velo-working-with-the-velo-sidebar#backend), and [page code](https://support.wix.com/en/article/velo-working-with-the-velo-sidebar#page-code) sections in Editor X.
+3. **Service Offerings:** Offer additional services beyond basic floor plans, such as interior design consultations, landscaping suggestions, and structural engineering recommendations.
 
-Learn more about [this repo's file structure](https://support.wix.com/en/article/velo-understanding-your-sites-github-repository-beta).
+4. **User Authentication:** Implement user authentication and authorization features to secure sensitive information and provide personalized experiences for registered users.
 
-## Test your code with the Local Editor
-The Local Editor allows you test changes made to your site in real time. The code in your local IDE is synced with the Local Editor, so you can test your changes before committing them to your repo. You can also change the site design in the Local Editor and sync it with your IDE.
+5. **Interactive Interface:** Develop an intuitive and visually appealing user interface using React components and libraries to enhance user engagement and satisfaction.
 
-Start the Local Editor by navigating to this repo's directory in your terminal and running `wix dev`.
+6. **Feedback Mechanism:** Integrate a feedback mechanism allowing users to provide comments, suggestions, and ratings for the provided floor designs and services.
 
-For more information, see [Working with the Local Editor](https://support.wix.com/en/article/velo-working-with-the-local-editor-beta).
+7. **Admin Panel:** Create an admin panel for managing floor plans, user requests, and service offerings. Admins should have the ability to add, edit, or remove content as necessary.
 
-## Preview and publish with the Wix CLI
-The Wix CLI is a tool that allows you to work with your site locally from your computer's terminal. You can use it to build a preview version of your site and publish it. You can also use the CLI to install [approved npm packages](https://support.wix.com/en/article/velo-working-with-npm-packages) to your site.
+---
 
-Learn more about [working with the Wix CLI](https://support.wix.com/en/article/velo-working-with-the-wix-cli-beta).
+### Technologies Used:
 
-## Invite contributors to work with you
-Git Integration & Wix CLI extends Editor X's [concurrent editing](https://support.wix.com/en/article/editor-x-about-concurrent-editing) capabilities. Invite other developers as collaborators on your [site](https://support.wix.com/en/article/inviting-people-to-contribute-to-your-site) and your [GitHub repo](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository). Multiple developers can work on a site's code at once.
+- **Frontend:**
+  - React: JavaScript library for building user interfaces.
+  - HTML/CSS: Markup and styling languages for structuring and designing web pages.
+  - React Router: Library for routing and navigation in React applications.
+  - Material-UI: React UI framework for designing responsive and customizable components.
+
+- **Backend:**
+  - Node.js: JavaScript runtime environment for executing server-side code.
+  - Express.js: Web application framework for building APIs and handling HTTP requests.
+  - MongoDB: NoSQL database for storing application data in JSON-like documents.
+  - Mongoose: MongoDB object modeling tool for Node.js applications.
+
+- **Authentication:**
+  - JSON Web Tokens (JWT): Token-based authentication mechanism for securing API endpoints and user sessions.
+  - bcrypt: Library for hashing and salting passwords to enhance security.
+
+---
+
+### Installation and Setup:
+
+1. **Clone the Repository:**
+   ```
+   git clone https://github.com/your_username/architectural-designs.git
+   ```
+
+2. **Install Dependencies:**
+   ```
+   cd architectural-designs
+   npm install
+   ```
+
+3. **Configure Environment Variables:**
+   - Create a `.env` file in the root directory.
+   - Define environment variables such as database connection URI, JWT secret, etc.
+
+4. **Start the Application:**
+   ```
+   npm start
+   ```
+
+5. **Access the Application:**
+   Open your web browser and navigate to `http://localhost:3000` to access the frontend of the application.
+
+6. **Admin Panel:**
+   Access the admin panel by navigating to `http://localhost:3000/admin` and logging in with admin credentials.
+
+
